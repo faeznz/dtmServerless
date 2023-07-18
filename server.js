@@ -9,16 +9,16 @@ const data = [
 ];
 
 // Endpoint untuk mendapatkan data JSON
-app.get('/api/data', (req, res) => {
+app.get('/data', (req, res) => {
   res.json(data);
 });
 
-// Port yang digunakan untuk server
-const port = 3000;
+// // Port yang digunakan untuk server
+// const port = 3000;
 
-// Menjalankan server
-app.listen(port, () => {
-  console.log(`Server berjalan di http://localhost:${port}`);
-});
+// // Menjalankan server
+// app.listen(port, () => {
+//   console.log(`Server berjalan di http://localhost:${port}`);
+// });
 
 module.exports = app;
