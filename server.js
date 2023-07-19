@@ -12,8 +12,8 @@ const jwt = require('jsonwebtoken');
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 
-app.use(express.static('public'));
 const app = express();
+app.use(express.static('public'));
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
